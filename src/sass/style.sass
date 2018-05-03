@@ -7,29 +7,27 @@ html, body
 
 body
   +bg(beige)
+  +container
 
 main
-  +bg(white)
-  +container
-  +x
+  +bg(purple)
+  +main(2)
+  +with-footer
+
+  article
+    +with-fixed-navbar(3rem)
 
 header
-  +bg(green)
-  +fixed-header
-  +x
-
-  nav
-    +p(1rem)
-    +bg(yellow)
-    +navbar(center, 10rem)
-    +x
-
-section.content
-  +bg(teal)
-  +main(2)
+  +fixed-navbar(1rem)
+  +bg(red)
+  +h(2rem)
 
 footer
-  +bg(purple)
   +footer(3)
-  height: 10rem
+  +bg(blue)
+  +h(5rem)
+
+.full-height
+  +fh
   +x
+  +bg(green)

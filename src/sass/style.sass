@@ -1,2 +1,35 @@
+@import variables
+@import functions
+
+html, body
+  margin: 0
+  padding: 0
+
 body
-  background-color: yellow
+  +bg(beige)
+
+main
+  +bg(white)
+  +container
+  +x
+
+header
+  +bg(green)
+  +fixed-header
+  +x
+
+  nav
+    +p(1rem)
+    +bg(yellow)
+    +navbar(center, 10rem)
+    +x
+
+section.content
+  +bg(teal)
+  +main(2)
+
+footer
+  +bg(purple)
+  +footer(3)
+  height: 10rem
+  +x

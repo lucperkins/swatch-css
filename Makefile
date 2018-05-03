@@ -1,7 +1,10 @@
-NPM = npm
+YARN = yarn
+
+setup:
+	$(YARN)
 
 build:
-	$(NPM) run build
+	$(YARN) run build
 
 dev:
-	$(NPM) run dev
+	$(YARN) run dev

@@ -1,9 +1,11 @@
 {
   "name": "swatch-css",
   "version": "0.1.0-SNAPSHOT",
-  "description": "A Sass framework based on CSS Grid",
   "main": "index.js",
   "repository": "https://github.com/lucperkins/swatch-css",
   "author": "Luc Perkins <lucperkins@gmail.com>",
-  "license": "MIT"
+  "license": "ISC",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
 }

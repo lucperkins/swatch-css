@@ -1,1 +1,1 @@
-window.alert("It works!");
+import './sass/style.sass'

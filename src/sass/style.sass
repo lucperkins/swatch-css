@@ -2,28 +2,42 @@
 @import functions
 @import variables
 
+$navbar-height: 5rem
+$navbar-inner-height: $navbar-height * .5
+
+=w90
+  +w(90%)
+
 body
-  +p0
-  +m0
-  +bc(white)
+  +m(1rem)
+  +bc(red)
   +c(white)
+  +with-fixed-navbar($navbar-height)
 
 main
   +bc(blue)
   +fh
+  +block
 
   header
     +c(black)
     +bc(yellow)
-    +fixed-navbar(5rem)
+    +fixed-navbar($navbar-height)
+    +centerable
 
     nav
-
+      border: 1px solid black
+      +w90
+      +h($navbar-inner-height)
+      +centerable
 
   article
     +c(white)
-    +with-fixed-navbar(5rem)
 
 footer
   +bc(green)
   +h(3rem)
+
+button
+  +bc(black)
+  +c(white)

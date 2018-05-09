@@ -1,9 +1,18 @@
+// Display block
+=block
+  display: block
+
 // Background color
 =bc($c)
   background-color: $c
 
+// Text color
 =c($c)
   color: $c
+
+// Font size
+=fs($fs)
+  font-size: $fs
 
 // Margin
 =m($m)
@@ -60,6 +69,10 @@
 =fh
   +mn-h(100vh)
 
+// Width
+=w($w)
+  width: $w
+
 // Top
 =t($px)
   top: $px
@@ -100,3 +113,14 @@
 // Fixed
 =fix
   position: fixed
+
+// Flexbox
+
+=flex
+  display: flex
+
+=just-c
+  justify-content: center
+
+=align-c
+  align-items: center

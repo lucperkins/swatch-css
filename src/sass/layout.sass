@@ -1,0 +1,14 @@
+@import shorthand
+@import variables
+
+=container($gap)
+  border: 1px solid black
+  margin: 0 $gap 0 $gap
+
+=has-gutter
+  +flex
+  flex-direction: column
+  min-height: 100vh
+
+=over-gutter
+  flex: 1

@@ -1,6 +1,13 @@
-// Display block
-=block
+// Font family
+=ff($f)
+  font-family: $f
+
+// Display
+=db
   display: block
+
+=di
+  display: inline
 
 // Background color
 =bc($c)
@@ -15,6 +22,9 @@
   font-size: $fs
 
 // Margin
+=m_($t, $r, $b, $l)
+  margin: $t $r $b $l
+
 =m($m)
   margin: $m
 
@@ -42,12 +52,23 @@
   margin-right: $m
 
 // Padding
+=p_($t, $r, $b, $l)
+  padding: $t $r $b $l
+
 =p($p)
   padding: $p
 
 // Padding = 0
 =p0
   padding: 0
+
+// Vertical padding
+=py($p)
+  padding: $p 0 $p 0
+
+// Horizontal padding
+=px($p)
+  padding: 0 $p 0 $p
 
 // Padding top
 =pt($p)

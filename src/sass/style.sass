@@ -1,33 +1,19 @@
 @import variables
 @import functions
 
-html, body
-  margin: 0
-  padding: 0
++base
 
 body
-  +bg(beige)
-  +container
+  +grid(0, 0, stretch)
+  +bg(black)
 
 main
-  +bg(purple)
-  +main(2)
-  +with-footer
+  +bg(black)
+  +fh
 
-  article
-    +with-fixed-navbar(3rem)
+  header
 
-header
-  +fixed-navbar(1rem)
-  +bg(red)
-  +h(2rem)
 
 footer
-  +footer(3)
-  +bg(blue)
-  +h(5rem)
-
-.full-height
-  +fh
-  +x
   +bg(green)
+  +h(3rem)

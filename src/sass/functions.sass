@@ -1,48 +1,27 @@
-=x
-  border: 1px solid black
+=base
+  html, body
+    +bg(white)
+    +m(0)
+    +p(0)
 
+=grid($column-gap, $row-gap, $justification)
+  display: grid
+  grid-column-gap: $column-gap
+  grid-row-gap: $row-gap
+  justify-content: $justification
+
+// Helper classes (development only)
 =bg($color)
   background-color: $color
-
-=h($height)
-  height: $height
-
-=with-footer
-  min-height: 100vh
 
 =fh
   min-height: 100vh
 
-=with-fixed-navbar($navbar-height)
-  margin-top: $navbar-height
+=m($m)
+  margin: $m
 
-=container
-  display: grid
-  grid-template: auto 1fr minmax(auto, auto) auto / 100%
+=p($p)
+  padding: $p
 
-=fixed-navbar($height)
-  height: $height
-  order: 1
-  flex-direction: column
-  position: fixed
-  width: 100%
-  top: 0
-  left: 0
-  right: 0
-
-=p($padding)
-  margin: $padding
-
-=m($margin)
-  margin: $margin
-
-=navbar($alignment)
-  display: flex
-  flex-direction: column
-  align-items: $alignment
-
-=main($order)
-  order: $order
-
-=footer($order)
-  order: $order
+=h($h)
+  height: $h

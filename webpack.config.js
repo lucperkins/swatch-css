@@ -2,6 +2,7 @@ const path = require('path')
 const BrowserSyncPlugin = require('browser-sync-webpack-plugin')
 
 const config = {
+  mode: 'development',
   entry: ['./src/index.js', './src/sass/style.sass'],
   output: {
     filename: 'bundle.js'

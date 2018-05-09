@@ -1,0 +1,102 @@
+// Background color
+=bc($c)
+  background-color: $c
+
+=c($c)
+  color: $c
+
+// Margin
+=m($m)
+  margin: $m
+
+=m0
+  margin: 0
+
+=mb($m)
+  margin-bottom: $m
+
+=mt($m)
+  margin-top: $m
+
+=ml($m)
+  margin-left: $m
+
+=mr($m)
+  margin-right: $m
+
+=mv($m)
+  margin-top: $m
+  margin-bottom: $m
+
+=mh($m)
+  margin-left: $m
+  margin-right: $m
+
+// Padding
+=p($p)
+  padding: $p
+
+// Padding = 0
+=p0
+  padding: 0
+
+// Padding top
+=pt($p)
+  padding-top: $p
+
+// Height
+=h($h)
+  height: $h
+
+// Min height
+=mn-h($h)
+  min-height: $h
+
+// Max height
+=mx-h($h)
+  max-height: $h
+
+// Full height
+=fh
+  +mn-h(100vh)
+
+// Top
+=t($px)
+  top: $px
+
+// Top = 0
+=t0
+  +t(0)
+
+// Bottom
+=b($px)
+  bottom: $px
+
+// Bottom = 0
+=b0
+  +b(0)
+
+// Left
+=l($px)
+  left: $px
+
+// Left = 0
+=l0
+  +l(0)
+
+// Right
+=r($px)
+  right: $px
+
+// Right = 0
+=r0
+  +r(0)
+
+// Full width
+=fw
+  display: block
+  width: 100%
+
+// Fixed
+=fix
+  position: fixed

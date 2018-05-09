@@ -1,27 +1,14 @@
-=base
-  html, body
-    +bg(white)
-    +m(0)
-    +p(0)
+@import shorthand
 
-=grid($column-gap, $row-gap, $justification)
-  display: grid
-  grid-column-gap: $column-gap
-  grid-row-gap: $row-gap
-  justify-content: $justification
+=navbar($height)
+  +t0
+  +fw
+  +h($height)
+  +fix
 
-// Helper classes (development only)
-=bg($color)
-  background-color: $color
+=fixed-navbar($height)
+  +navbar($height)
+  +fix
 
-=fh
-  min-height: 100vh
-
-=m($m)
-  margin: $m
-
-=p($p)
-  padding: $p
-
-=h($h)
-  height: $h
+=with-fixed-navbar($height)
+  +pt($height)

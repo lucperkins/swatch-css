@@ -1,19 +1,29 @@
-@import variables
+@import shorthand
 @import functions
-
-+base
+@import variables
 
 body
-  +grid(0, 0, stretch)
-  +bg(black)
+  +p0
+  +m0
+  +bc(white)
+  +c(white)
 
 main
-  +bg(black)
+  +bc(blue)
   +fh
 
   header
+    +c(black)
+    +bc(yellow)
+    +fixed-navbar(5rem)
 
+    nav
+
+
+  article
+    +c(white)
+    +with-fixed-navbar(5rem)
 
 footer
-  +bg(green)
+  +bc(green)
   +h(3rem)
